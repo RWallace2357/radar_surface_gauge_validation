@@ -7,8 +7,8 @@ Required Modules:
 
 Most modules are co-installed with Anaconda. The user will 
 need: 
-pyart (http://arm-doe.github.io/pyart/)
-nexradaws (https://pypi.org/project/nexradaws/)  
+pyart (http://arm-doe.github.io/pyart/) \n
+nexradaws (https://pypi.org/project/nexradaws/) \n  
 read_format_nexrad_lvl2 (custom function: Robinson Wallace)
 calcdistbear (custom function: Robinson Wallace)
 radar_lonlat (custom function: Robinson Wallace)
