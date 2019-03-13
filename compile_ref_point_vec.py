@@ -29,7 +29,7 @@ from radar_lonlat import radar_lonlat
 # For some reason MY (Robinson's) environment can't find PROJ. Appears to be
 # a conda issue that they said is fixed, but my experience says otherwise.
 # The user MAY NOT NEED THIS! Comment or delete out as necessary.
-os.environ["PROJ_LIB"] = "C:\\Users\\robin\\Anaconda3\\Library\\share"; #fixr
+os.environ["PROJ_LIB"] = "C:\\Users\\<windows user>\\Anaconda3\\Library\\share"; #fixr
 import nexradaws
 
 # Finds the index number of the value in the array closest to the desired value
@@ -69,10 +69,10 @@ elv = 0
 # The failepath to the csv that contains the radar locations. These data
 # can be obtained from http://apollo.lsc.vsc.edu/classes/remote/lecture_notes/radar/88d/88D_locations.html
 # and need to be copied into a csv file.
-radarlocations_filepath = 'C:/Users/robin/OneDrive/Graduate School/ATOC 7500 - Snow Observations/Python Programs/SnowGuage Radar Comparison/radarlocations.csv'
+radarlocations_filepath = '/path/to/radarlocations.csv'
 
 # Where to save the generated CSV file
-csv_filepath = 'C:/Users/robin/Desktop/ref_vector.csv'
+csv_filepath = '/path/to/csv_out_file.csv'
 
 """ ####################################################################### """
 """ ################## GET THE NEXRAD RADAR DATA FROM AWS ################# """

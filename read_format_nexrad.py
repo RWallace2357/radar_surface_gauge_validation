@@ -10,7 +10,7 @@ Purpose: To reorder nexrad data so that each scan has it's 0 azimuth degree
 """
 
 import os
-os.environ["PROJ_LIB"] = "C:\\Users\\robin\\Anaconda3\\Library\\share"; #fixr
+os.environ["PROJ_LIB"] = "C:\\Users\\<windows user>\\Anaconda3\\Library\\share"; #fixr
 import pyart
 import numpy as np
 
