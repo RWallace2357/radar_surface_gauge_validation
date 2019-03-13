@@ -6,15 +6,16 @@ Coded for Python 3
 Required Modules: 
 
 Most modules are co-installed with Anaconda. The user will need: 
-pyart (http://arm-doe.github.io/pyart/)
 
-nexradaws (https://pypi.org/project/nexradaws/)
+1) pyart (http://arm-doe.github.io/pyart/)
 
-read_format_nexrad_lvl2 (custom function: Robinson Wallace)
+2) nexradaws (https://pypi.org/project/nexradaws/)
 
-calcdistbear (custom function: Robinson Wallace)
+3) read_format_nexrad_lvl2 (custom function: Robinson Wallace)
 
-radar_lonlat (custom function: Robinson Wallace)
+4) calcdistbear (custom function: Robinson Wallace)
+
+5) radar_lonlat (custom function: Robinson Wallace)
 
 
 Custom modules: read_format_nexrad_lvl2, calcdistbear, and radar_lonlat should be distribtuted alongside this routine. 
