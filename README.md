@@ -5,7 +5,9 @@ Coded for Python 3
 
 Required Modules: 
 
-Most modules are co-installed with Anaconda. The user will need: 
+Most modules are co-installed with Anaconda. 
+
+Not installed with Anaconda, the user will need: 
 
 1) pyart (http://arm-doe.github.io/pyart/)
 
