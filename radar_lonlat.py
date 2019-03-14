@@ -42,6 +42,6 @@ def radar_lonlat(radar_id,radarlocations_filepath):
                 
 if __name__ == '__main__':
     
-    radarlocations_filepath = 'C:/Users/robin/OneDrive/Graduate School/ATOC 7500 - Snow Observations/Python Programs/SnowGuage Radar Comparison/radarlocations.csv'
+    radarlocations_filepath = '/path/to/radarlocations.csv'
     
     location = radar_lonlat('KFTG',radarlocations_filepath)
