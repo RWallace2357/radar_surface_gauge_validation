@@ -86,8 +86,8 @@ def ref_point(begin_time,end_time,outfile,radar_id='KFTG',
     radarlocations_filepath = 'path/to/radarlocations.csv'
 
     # Set the beginning and end times for the period of analysis in YYYYMMDDHH format
-    radar_begin_time = datetime.datetime.strptime(begin_time, '%Y%m%d%H')
-    radar_end_time   = datetime.datetime.strptime(end_time, '%Y%m%d%H')    
+    radar_begin_time = datetime.datetime.strptime(begin_time, '%Y%m%d%H%M')
+    radar_end_time   = datetime.datetime.strptime(end_time, '%Y%m%d%H%M')    
     
     if radar_begin_time > radar_end_time:
         raise ValueError("Timespan for search invalid. End time needs to be after the start time")
