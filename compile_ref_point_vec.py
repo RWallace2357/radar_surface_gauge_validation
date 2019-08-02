@@ -25,11 +25,6 @@ import numpy as np
 from calcdistbear import calcdistbear
 from read_format_nexrad import read_format_nexrad_lvl2
 from radar_lonlat import radar_lonlat
-
-# For some reason MY (Robinson's) environment can't find PROJ. Appears to be
-# a conda issue that they said is fixed, but my experience says otherwise.
-# The user MAY NOT NEED THIS! Comment or delete out as necessary.
-os.environ["PROJ_LIB"] = "C:\\Users\\<windows user>\\Anaconda3\\Library\\share"; #fixr
 import nexradaws
 
 # Finds the index number of the value in the array closest to the desired value
