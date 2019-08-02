@@ -13,8 +13,12 @@ Purpose: This routine parses out the data obtained from:
 
 import numpy as np
 import csv
+from os import path
 
 def radar_lonlat(radar_id,radarlocations_filepath):
+    
+    if not path.exists(radarlocations_filepath):
+        raise FileNotFoundError("The CSV file containing radar locations was not found. Set the filepath in the ref_point function")
     
     with open(radarlocations_filepath, 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
@@ -38,10 +42,3 @@ def radar_lonlat(radar_id,radarlocations_filepath):
                 print('Radar Longitude: '+str(round(longitude_decimal,2)))
     
     return longitude_decimal, latitude_decimal
-                
-                
-if __name__ == '__main__':
-    
-    radarlocations_filepath = '/path/to/radarlocations.csv'
-    
-    location = radar_lonlat('KFTG',radarlocations_filepath)
