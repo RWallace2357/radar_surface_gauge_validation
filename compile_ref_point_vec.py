@@ -139,6 +139,9 @@ def ref_point(begin_time,end_time,outfile,radar_id='KFTG',
     
     for scan in results.iter_success():
         
+        # Pyart doesn't like the MDM files provided at the top of the hour, so we skip them 
+        if 'MDM' in str(scan): continue
+         
         print('Reading in: '+scan.filename)
         
         vol = read_format_nexrad_lvl2(scan.filepath)
